@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Tailwind CSS CDN -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <nav class="flex items-center justify-between flex-wrap bg-gray-400 p-6 w-full z-10 sticky top-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <a class="" href="#">
+                    <img src="https://cdn4.iconfinder.com/data/icons/winter-1-2/512/Winter-16-256.png" width="50"
+                        alt="coffee cup logo">
+                </a>
+            </div>
+        
+            <div class="block md:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-gray-300 hover:border-gray-300">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        
+            <div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block pt-6 md:pt-0" id="nav-content">
+                <ul class="list-reset md:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-300 hover:text-underline py-2 px-4"
+                            href="#">About</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-300 hover:text-underline py-2 px-4"
+                            href="#">Our Menu</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-300 hover:text-underline py-2 px-4"
+                            href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="md:flex justify-between py-20 px-10 bg-gray-700">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-2xl md:text-4xl lg:text-6xl text-gray-200 mb-5">Welcome to the Coffee House!</h2>
+                <p class="text-gray-300 mb-6">Come for the cold brew, stay for the community (& more caffeine).</p>
+        
+                <a href="#"
+                    class="inline-block py-3 px-6 text-lg bg-blue-400 text-blue-800 hover:bg-blue-300 text-blue-700 rounded mr-2 transition ease-in duration-150">Menu</a>
+                <a href="#"
+                    class="inline-block py-3 px-6 text-lg bg-yellow-500 text-yellow-800 hover:bg-yellow-400 text-yellow-700 rounded transition ease-in duration-150">Online
+                    Store</a>
+            </div>
+        
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="barista making coffee" class="w-full rounded shadow-2xl">
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="md:flex py-16 px-10 bg-gray-300 text-gray-600 text-center">
+            <div class="mr-2 text-center">
+                <img src="https://images.unsplash.com/photo-1543196614-e046c7d3d82e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1198&q=80"
+                    alt="man studying in coffee shop" class="w-full mb-4 rounded border-solid border-2 border-gray-500">
+                <p>Study Spaces</p>
+            </div>
+        
+            <div class="mr-2 mt-8 text-center">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="people holding coffee cups" class="w-full mb-4 rounded border-solid border-2 border-gray-500">
+                <p>Coffee of the Day</p>
+            </div>
+        
+            <div class="mr-2 text-center">
+                <img src="https://images.unsplash.com/photo-1520640811039-d5e14ea82532?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                    alt="person holding two mugs of coffee" class="w-full mb-4 rounded border-solid border-2 border-gray-500">
+                <p>Meetup Groups</p>
+            </div>
+        
+            <div class="mr-2 mt-8 text-center">
+                <img src="https://images.unsplash.com/photo-1593926365536-b1fda191c28a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                    alt="two people in a cafe" class="w-full mb-4 rounded border-solid border-2 border-gray-500">
+                <p>Cafe Bites</p>
+            </div>
+        </div>
+
+        <!-- Footer & Newsletter -->
+        <div class="p-10 bg-gray-800 text-gray-300 flex justify-between">
+            <div class="md:w-1/2">
+                <h3 class="text-lg mb-2">Join Our Email List</h3>
+                <form class="flex">
+                    <input type="email" class="w-full rounded-l py-3 px-4 outline-none focus:bg-gray-200">
+                    <button
+                        class="bg-blue-400 text-blue-800 hover:bg-blue-300 text-blue-700 transition ease-in duration-150 rounded-r px-4">Join</button>
+                </form>
+            </div>
+        
+            <div class="flex items-center">
+                <p>Copyright &copy; Coffee House 2020</p>
+            </div>
+        </div>
+        
+        <script src="scripts/app.js" async defer></script>
+    </body>
+</html>
