@@ -1,4 +1,4 @@
-First site made with Tailwind CSS.
+First site made with [Tailwind CSS](https://tailwindcss.com/).
 
 Customized tutorial project from this resource: [Your First Tailwind Website](https://www.youtube.com/watch?v=NRagrTU_v8o&ab_channel=TraversyMedia)
 
